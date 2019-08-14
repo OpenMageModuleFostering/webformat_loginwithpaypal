@@ -42,7 +42,7 @@ paypal.use( ["login"], function(login) {
     "returnurl": "<?php echo $this->getReturnUrl() ?>"
   });
   if ($$('#webformat_loginwithpaypal_container button')) {
-      $$('#webformat_loginwithpaypal_container, 'return false;');
+      $$('#webformat_loginwithpaypal_container button')[0].setAttribute('onclick', 'return false;');
   }
 });
 </script>

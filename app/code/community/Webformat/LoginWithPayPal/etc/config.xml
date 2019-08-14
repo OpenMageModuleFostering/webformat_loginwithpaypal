@@ -28,7 +28,7 @@
 <config>
     <modules>
         <Webformat_LoginWithPayPal>
-            <version>0.9.0</version>
+            <version>0.9.1</version>
         </Webformat_LoginWithPayPal>
     </modules>
     <global>

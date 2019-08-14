@@ -57,7 +57,7 @@
                         </flg_sandbox>
                         <client_id translate="label">
                             <label>Client ID</label>
-                            <frontend_type>text</frontend_type>
+                            <frontend_type>password</frontend_type>
                             <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -68,7 +68,7 @@
                         </client_id>
                         <secret translate="label">
                             <label>Secret</label>
-                            <frontend_type>text</frontend_type>
+                            <frontend_type>password</frontend_type>
                             <sort_order>30</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -79,7 +79,7 @@
                         </secret>
                         <sandbox_client_id translate="label">
                             <label>Sandbox Client ID</label>
-                            <frontend_type>text</frontend_type>
+                            <frontend_type>password</frontend_type>
                             <sort_order>40</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -90,7 +90,7 @@
                         </sandbox_client_id>
                         <sandbox_secret translate="label">
                             <label>Sandbox Secret</label>
-                            <frontend_type>text</frontend_type>
+                            <frontend_type>password</frontend_type>
                             <sort_order>50</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
