@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Webformat_LoginWithPayPal",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL-3.0)",
+    "homepage": "",
+    "description": "This extension makes the customer login easier by adding a “Login With PayPal” button to customer login page and onepage checkout login tab.",
+    "authors": [
+    {
+        "name": "WEBFORMAT s.r.l.",
+        "email": "magesupport@webformat.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
