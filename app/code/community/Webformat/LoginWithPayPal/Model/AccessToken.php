@@ -47,6 +47,7 @@ class Webformat_LoginWithPayPal_Model_AccessToken extends Webformat_LoginWithPay
         curl_setopt($ch, CURLOPT_POST, count($post));
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        // curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         if (($output = curl_exec($ch)) === FALSE) {
             throw new Zend_Exception("Could not obtain PayPal Access Token");
         }

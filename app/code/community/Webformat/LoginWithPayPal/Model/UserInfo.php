@@ -37,6 +37,7 @@ class Webformat_LoginWithPayPal_Model_UserInfo extends Webformat_LoginWithPayPal
         $ch = curl_init($this->getServiceBaseUrl('/v1/identity/openidconnect/userinfo/?schema=openid'));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        // curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         if (($output = curl_exec($ch)) === FALSE) {
             throw new Zend_Exception("Could not obtain user info");
         }

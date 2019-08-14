@@ -28,7 +28,7 @@
 <config>
     <modules>
         <Webformat_LoginWithPayPal>
-            <version>0.9.2</version>
+            <version>0.9.3</version>
         </Webformat_LoginWithPayPal>
     </modules>
     <global>
@@ -46,6 +46,11 @@
             <webformat_loginwithpaypal>
                 <class>Webformat_LoginWithPayPal_Model</class>
             </webformat_loginwithpaypal>
+            <paypal>
+                <rewrite>
+                    <api_nvp>Webformat_LoginWithPayPal_Model_Paypal_Api_Nvp</api_nvp>
+                </rewrite>
+            </paypal>
         </models>
     </global>
     <frontend>
@@ -103,7 +108,7 @@
                 <flg_sandbox>1</flg_sandbox>
                 <sandbox_endpoint>api.sandbox.paypal.com</sandbox_endpoint>
                 <endpoint>api.paypal.com</endpoint>
-                <scope>openid email profile address phone</scope>
+                <scope>openid email profile address phone https://uri.paypal.com/services/expresscheckout</scope>
             </settings>
             <redirect>
                 <success_login>customer/account</success_login>

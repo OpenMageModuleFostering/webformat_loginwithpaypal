@@ -41,20 +41,23 @@ class Webformat_LoginWithPayPal_Model_Grant extends Webformat_LoginWithPayPal_Mo
         $ch = curl_init($this->getServiceBaseUrl('/v1/identity/openidconnect/tokenservice'));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_USERPWD, "$username:$password");
-        curl_setopt($ch, CURLOPT_POST, count($post));
+        curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
-        
+        // curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+
         if (($output = curl_exec($ch)) === FALSE) {
             throw new Zend_Exception("Could not grant authorization code");
         }
         curl_close($ch);
         $this->setResponse(json_decode($output));
         $this->validateResponse();
+        Mage::getSingleton('customer/session')
+            ->setPayPalAccessToken($this->getResponse()->access_token);
 
         return true;
     }
 
-    
+
     /**
      * Validate response.
      * @throws Zend_Exception
