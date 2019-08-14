@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>Webformat_LoginWithPayPal</name>
-    <version>0.9.3</version>
+    <version>0.9.4</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL 3.0)</license>
     <channel>community</channel>
@@ -12,11 +12,11 @@
 Please note that an appropiate application in PayPal developer site it's needed. You can read our help page before installing the extension:&#xD;
 http://www.webformat.com/index.php?id=989  (Italian documentation)&#xD;
 http://www.webformat.com/index.php?id=991 (English documentation)</description>
-    <notes>Added Seamless Checkout option</notes>
+    <notes>Updated PHP maximum version number.</notes>
     <authors><author><name>WEBFORMAT s.r.l.</name><user>webformat</user><email>magesupport@webformat.com</email></author></authors>
-    <date>2015-02-13</date>
-    <time>10:19:25</time>
+    <date>2015-04-27</date>
+    <time>08:28:40</time>
     <contents><target name="magecommunity"><dir name="Webformat"><dir name="LoginWithPayPal"><dir name="Block"><file name="AbstractButton.php" hash="e04788ca16d2c16e4ce4fa4d327f4dee"/><dir name="Checkout"><dir name="Onepage"><dir name="Login"><file name="Button.php" hash="338578ad8c0898153f1f1b5f2a650f29"/></dir></dir></dir><dir name="Customer"><dir name="Form"><dir name="Login"><file name="Button.php" hash="6d90b2bec3cbf61e190d1e2e34ac76ea"/><file name="LoginWithPayPal.php" hash="d8cb8f2497c1b55623bb9eaa31b3009b"/></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="0308a2b185357598f1ba84d366b64301"/></dir><dir name="Model"><file name="AbstractRequest.php" hash="40b0ebd9eeb0ed76c317f8b5e91891ff"/><file name="AccessToken.php" hash="33f1d8309b69baf6240b9791d7e4ce64"/><dir name="BackendNotifier"><file name="Feed.php" hash="b2be1437b16032678348b47cc9fdf851"/><file name="Observer.php" hash="855c1f0bb8c9bf123dd3e2e91eb0f78e"/></dir><file name="Grant.php" hash="505c030617612c12234a363f6fbbcc95"/><file name="Login.php" hash="5b5283363d73821a897766dfe4188787"/><dir name="Paypal"><dir name="Api"><file name="Nvp.php" hash="fe15e8e9a6d1cf0af88da7867d75287f"/></dir></dir><dir name="System"><dir name="Config"><dir name="Source"><dir name="Button"><file name="Theme.php" hash="ee5558f22633bbed5058840971e4add7"/></dir></dir></dir></dir><file name="UserInfo.php" hash="f7357194d23d2cf7d462a19d3f926523"/></dir><dir name="controllers"><file name="IndexController.php" hash="480b588f3e7a7b3e51c1e5e675a56c83"/></dir><dir name="etc"><file name="Webformat_LoginWithPayPal.xml" hash="0c076ab21d243bfd715ab0010a8a5116"/><file name="adminhtml.xml" hash="bab6d148c9560121b473b52374a234a5"/><file name="config.xml" hash="84ca546f0656701429c997766cc30a0f"/><file name="system.xml" hash="5a57ca6037d9b65d18b4f29b8017151f"/></dir></dir></dir></target><target name="magelocale"><dir><dir name="it_IT"><dir name="webformat"><file name="Webformat_LoginWithPayPal.csv" hash="a4cdadcbebad4cd13e7f69d4f6b42637"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="webformat"><file name="loginwithpaypal.xml" hash="270fa729d717ed6950eb4d0d8af5c473"/></dir></dir><dir name="template"><dir name="webformat"><dir name="loginwithpaypal"><dir name="customer"><dir name="form"><dir name="login"><file name="button.phtml" hash="9fd11a652472d5faa735a07021dfdc68"/><file name="loginwithpaypal.phtml" hash="9bbfd3a6d2dda49844824f1bb6740c2c"/></dir></dir></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Webformat_LoginWithPayPal.xml" hash="237d579ed4022f3a1ce552f48e257cfe"/></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.2.0</min><max>5.6.0</max></php><extension><name>curl</name><min>7.0.0</min><max>8.0.0</max></extension></required></dependencies>
+    <dependencies><required><php><min>5.2.0</min><max>5.6.40</max></php><extension><name>curl</name><min>7.0.0</min><max>8.0.0</max></extension></required></dependencies>
 </package>
